@@ -3,7 +3,7 @@
    ===================================================================== */
 :root{
   /* ---- WARNA (ganti kode hex untuk mengubah tema seluruh web) ---- */
-  --aksen:#efec43;      /* kuning: tombol utama */
+  --aksen:#ffffff;      /* kuning: tombol utama */
   --gelap:#075d04;      /* navbar, hero, footer */
   --bg:#f3f4f1;         /* latar halaman */
   --kartu:#fff;         /* latar kartu */
