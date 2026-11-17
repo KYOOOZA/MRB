@@ -66,8 +66,15 @@ function tampil() {
   $("#grid").innerHTML = hasil.length ? hasil.slice(0, state.shown).map(kartu).join("")
     : `<p class="empty">Produk tidak ditemukan. Coba kata lain, atau tanya admin lewat WhatsApp.</p>`;
   const sisa = hasil.length - state.shown;
-  $("#more").hidden = sisa <= 0;
-  $("#more").textContent = `Tampilkan lebih banyak (${sisa} lagi)`;
+  const moreBtn = $("#more");
+  if (sisa <= 0) {
+    moreBtn.hidden = true;
+    moreBtn.style.display = "none";
+  } else {
+    moreBtn.hidden = false;
+    moreBtn.style.display = "";
+    moreBtn.textContent = `Tampilkan lebih banyak (${sisa} lagi)`;
+  }
   document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c.dataset.cat === state.cat));
 }
 function setFilter(o, lompat) {
@@ -117,7 +124,13 @@ document.addEventListener("click", e => {
 });
 document.addEventListener("keydown", e => { if (e.key === "Escape") tutupDetail(); });
 $("#burger").onclick = () => { const o = $("#menu").classList.toggle("open"); $("#burger").setAttribute("aria-expanded", o); };
-$("#more").onclick = () => { state.shown += CONFIG.perPage; tampil(); };
+$("#more").onclick = () => {
+  const total = PRODUCTS.filter(cocok).length;
+  if (state.shown < total) {
+    state.shown += CONFIG.perPage;
+    tampil();
+  }
+};
 $("#reset").onclick = () => setFilter({ cat: "", brand: "", size: "", surface: "", q: "" });
 $("#q").oninput = e => { state.q = e.target.value; state.shown = CONFIG.perPage; tampil(); };
 $("#fBrand").onchange = e => setFilter({ brand: e.target.value });
