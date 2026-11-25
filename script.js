@@ -150,12 +150,20 @@ function cocok(p) {
     .join(" ")
     .toLowerCase();
 
+  const kataKunci = state.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const cocokCari =
+    !kataKunci.length ||
+    kataKunci.every(k => {
+      const aman = k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp(`\\b${aman}`, "i").test(teks);
+    });
+
   return (
     (!state.cat || p.category === state.cat) &&
     (!state.brand || p.brand === state.brand) &&
     (!state.size || p.size === state.size) &&
     (!state.surface || p.surface === state.surface) &&
-    (!state.q || state.q.toLowerCase().split(/\s+/).every(k => teks.includes(k)))
+    cocokCari
   );
 }
 
