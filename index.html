@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mitra Riau Bangunan | Katalog Toko Bangunan Pekanbaru</title>
+<meta name="description" content="Katalog material dan perlengkapan bangunan di Pekanbaru: keramik, granit, cat, pipa, semen, besi. Tanya stok lewat WhatsApp.">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Source+Sans+3:wght@400;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Favicon: ganti dengan logo toko -->
+<link rel="icon" href="logo.png">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============
+     Menambah menu: tambah <a href="#id-section"> di <nav>. -->
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#home"><img src="logo.png" alt="" onerror="this.remove()"><span id="storeName"></span></a>
+    <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav id="menu">
+      <a href="#home">Beranda</a><a href="#kategori">Kategori</a><a href="#produk">Produk</a>
+      <a href="#merek">Merek</a><a href="#tentang">Tentang</a><a href="#lokasi">Lokasi</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO (tampilan awal) ============
+     Ubah judul/teks langsung di bawah.
+     Foto latar: lihat style.css bagian ".hero" (variabel --hero-foto). -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Solusi Kebutuhan Properti Anda</h1>
+      <p> Temukan berbagai pilihan produk dan informasi ketersedian stok.</p>
+      <form class="search" id="heroSearch"><input id="heroInput" placeholder="Cari: granit 60x60, semen, pipa…" aria-label="Cari produk"><button class="btn">Cari</button></form>
+      <ul class="points"><li>✔ Pilihan produk lengkap</li><li>✔ Kualitas terpercaya</li><li>✔ Cek stok via WhatsApp</li></ul>
+    </div>
+    <!-- Dinding motif: diisi otomatis dari foto keramik di products.js -->
+    <div class="wall" id="wall" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ KATEGORI (otomatis dari CONFIG.categories) ============ -->
+<section class="sec" id="kategori"><div class="wrap">
+  <h2>Kategori produk</h2><p class="sub">Pilih sesuai kebutuhan pekerjaan Anda.</p>
+  <div class="cats" id="cats"></div>
+</div></section>
+
+<!-- ============ PRODUK ============ -->
+<section class="sec alt" id="produk"><div class="wrap">
+  <h2>Daftar produk</h2><p class="sub" id="count"></p>
+  <div class="chips" id="chips"></div>
+  <div class="filters">
+    <input id="q" placeholder="Cari nama, merek, ukuran…" aria-label="Cari">
+    <select id="fBrand" aria-label="Merek"></select>
+    <select id="fSize" aria-label="Ukuran"></select>
+    <select id="fSurface" aria-label="Permukaan"></select>
+    <button class="btn ghost" id="reset">Reset</button>
+  </div>
+  <div class="grid" id="grid"></div>
+  <p class="more"><button class="btn ghost" id="more" hidden></button></p>
+</div></section>
+
+<!-- ============ MEREK (otomatis dari products.js) ============ -->
+<section class="sec" id="merek"><div class="wrap">
+  <h2>Merek yang kami sediakan</h2><p class="sub">Ketuk merek untuk melihat produknya.</p>
+  <div class="brands" id="brands"></div>
+</div></section>
+
+<!-- ============ TENTANG KAMI (edit teks bebas) ============ -->
+<section class="sec alt" id="tentang"><div class="wrap two">
+  <div>
+    <h2>Tentang kami</h2>
+    <p> Mitra Riau Bangunan hadir untuk menjadi bagian dari setiap kebutuhan pembangunan dan renovasi Anda.</p>
+    <p> Dengan berbagai pilihan produk bahan bangunan dan perlengkapan rumah
+      mulai dari semen, granit, keramik, cat, pintu, pipa, bcp, hingga berbagai perlengkapan rumah dan bangunan lainnya, Kami siap membantu Anda menemukan produk yang sesuai dengan kebutuhan.</p>
+    <p class="note">Konsultasi Produk ?   &nbsp; Kami Siap Membantu.</p>
+  </div>
+  <!-- Foto toko: taruh file foto-toko.jpg di folder ini, lalu ganti src -->
+  <img class="shop" src="foto_mrb.jpeg" alt="Toko Mitra Riau Bangunan" onerror="this.outerHTML='<div class=&quot;shop ph&quot;>Foto toko di sini</div>'">
+</div></section>
+
+<!-- ============ LOKASI ============ -->
+<section class="sec" id="lokasi"><div class="wrap two">
+  <div>
+    <h2>Lokasi & kontak</h2>
+    <p><b>Alamat</b><br><span id="addr"></span></p>
+    <p><b>WhatsApp</b><br><span id="phone"></span></p>
+    <p><b>Jam buka </b><br> <span id="hours"></span> </p>
+
+    <a class="btn" id="mapBtn" target="_blank" rel="noopener"></a>
+  </div>
+  <!-- Peta: salin kode "Sematkan peta" dari Google Maps, ganti src di bawah -->
+  <iframe class="map" title="Lokasi toko" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.54807326748502!2d101.41580567319446!3d0.5169839514191659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ab002f26241d%3A0x4836bd821a423b62!2sMitra%20Riau%20Bangunan!5e1!3m2!1sid!2sid"></iframe>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> Mitra Riau Bangunan.</div></footer>
+
+<!-- Tombol WhatsApp melayang -->
+<a class="fab btn wa" id="fab" target="_blank" rel="noopener">Chat WhatsApp</a>
+
+<!-- ============ POPUP DETAIL PRODUK (diisi oleh script.js) ============ -->
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-label="Detail produk">
+  <div class="box" id="modalBox"></div>
+</div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

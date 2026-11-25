@@ -1,0 +1,127 @@
+/* =====================================================================
+   style.css — TAMPILAN. Ubah warna/font/jarak di bagian ":root" paling atas.
+   ===================================================================== */
+:root{
+  /* ---- WARNA (ganti kode hex untuk mengubah tema seluruh web) ---- */
+  --aksen:#f5f5f0;      /* kuning: tombol utama */
+  --gelap:#095605;      /* navbar, hero, footer */
+  --bg:#f3f4f1;         /* latar halaman */
+  --kartu:#fff;         /* latar kartu */
+  --teks:#1b2430;  --abu:#5d6672;  --garis:#dcdfe3;
+  --wa:#1f9d55;         /* hijau WhatsApp */
+  /* ---- FOTO LATAR HERO (opsional): hilangkan tanda komentar & isi nama file ----
+  --hero-foto:url("foto-hero.jpg"); */
+  /* ---- LEBAR KONTEN & JARAK ---- */  
+  --lebar:1100px;  --jarak:44px;
+  /* ---- JUMLAH KOLOM PRODUK: ubah angka 190px (lebih kecil = kolom lebih banyak) ---- */
+  --kolom-produk:190px;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--teks);font:16px/1.55 'Source Sans 3',system-ui,sans-serif}
+h1,h2,h3,.brand{font-family:Archivo,'Arial Narrow',sans-serif;font-weight:800;line-height:1.12}
+a{color:inherit}button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--aksen);outline-offset:2px}
+.wrap{max-width:var(--lebar);margin:auto;padding:0 18px}
+p{margin-bottom:12px}
+
+/* ---------- Tombol ---------- */
+.btn{display:inline-block;border:0;border-radius:8px;padding:12px 20px;font-weight:600;background:var(--aksen);color:var(--gelap);text-decoration:none}
+.btn.ghost{background:none;border:2px solid var(--garis);color:var(--teks)}
+.btn.wa{background:var(--wa);color:#fff}
+
+/* ---------- Navbar ---------- */
+.top{position:sticky;top:0;z-index:20;background:var(--gelap);color:#fff}
+.bar{display:flex;align-items:center;gap:16px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--aksen);margin-right:auto;font-size:17px}
+.brand img{height:36px}
+nav{display:flex;gap:2px}nav a{padding:8px 12px;border-radius:6px;text-decoration:none;color:#cfd5dc}nav a:hover{background:#ffffff22;color:#fff}
+.burger{display:none;background:none;border:0;color:#fff;font-size:26px}
+
+/* ---------- Hero (tampilan awal) ---------- */
+.hero{background:var(--gelap) var(--hero-foto,none) center/cover;color:#fff;padding:40px 0 48px}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:34px;align-items:center}
+.hero h1{font-size:clamp(32px,5vw,54px);margin-bottom:14px}
+.hero p{color:#c4cbd3;max-width:46ch}
+.search{display:flex;gap:8px;background:#fff;border-radius:10px;padding:6px;max-width:460px;margin:18px 0}
+.search input{flex:1;min-width:0;border:0;padding:10px;font:inherit;border-radius:6px}
+.points{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px 20px;font-size:14px;color:#c4cbd3}
+/* Dinding motif: ubah jumlah kolom di sini */
+.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;transform:rotate(0deg);transition:opacity .35s ease}
+.wall img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:3px}
+
+/* ---------- Seksi umum ---------- */
+.sec{padding:var(--jarak) 0}.sec.alt{background:#e9ebe7}
+.sec h2{font-size:28px;margin-bottom:6px}.sub{color:var(--abu);margin-bottom:20px}
+.note{background:var(--kartu);border:1px dashed var(--aksen);border-radius:8px;padding:10px 14px;font-size:14px;color:var(--abu)}
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:start}
+.shop,.map{width:100%;min-height:240px;border:0;border-radius:12px;object-fit:cover}
+.ph{background:#cfd6dd;display:grid;place-items:center;color:var(--gelap);font-weight:600}
+
+/* ---------- Kategori ---------- */
+
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cat{background:var(--kartu);border:1px solid var(--garis);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:center;text-align:left;color:var(--teks)}
+.cat:hover{border-color:var(--aksen)}.cat i{font-style:normal;font-size:28px}.cat b{display:block}.cat span{font-size:13px;color:var(--abu)}
+#kategori {
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), 
+              url("bg-kategori.jpg") center center / cover no-repeat fixed;
+  text-align: center;
+}
+
+/* ---------- Filter & grid produk ---------- */
+#produk {
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), 
+              url("bg-kategori.jpg") center center / cover no-repeat fixed;
+  text-align: center;
+}
+
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:10px}
+.chip{white-space:nowrap;background:var(--kartu);border:1px solid var(--garis);border-radius:999px;padding:8px 16px;font-weight:600;color:var(--teks)}
+.chip.on,.chip:hover{background:var(--aksen);border-color:var(--aksen)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.filters input,.filters select{padding:10px;border:1px solid var(--garis);border-radius:8px;background:var(--kartu);font:inherit}
+.filters input{flex:1;min-width:180px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--kolom-produk),1fr));gap:16px}
+.card{background:var(--kartu);border:1px solid var(--garis);border-radius:10px;overflow:hidden;text-align:left;padding:0;color:var(--teks)}
+.card:hover{border-color:var(--gelap)}
+/* Bentuk foto kartu: ubah 1 / 1 jadi 4 / 3 untuk foto lebih lebar */
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#e5e7eb}
+.card div{padding:12px}.card small{color:var(--abu)}.card b{display:block;font-family:Archivo,sans-serif}
+.tag{display:inline-block;font-size:12px;background:var(--bg);border-radius:4px;padding:2px 7px;margin:6px 4px 0 0;color:var(--abu)}
+.ok{display:block;margin-top:8px;color:var(--wa);font-weight:600;font-size:13px}
+.more{text-align:center;margin-top:22px}
+.empty{grid-column:1/-1;color:var(--abu)}
+
+/* ---------- Merek ---------- */
+
+.brands{display:flex;flex-wrap:wrap;gap:10px}
+.brands button{background:var(--kartu);border:1px solid var(--garis);border-radius:999px;padding:9px 18px;font-weight:600;color:var(--teks)}
+.brands button:hover{background:var(--aksen);border-color:var(--aksen)}.brands span{color:var(--abu);font-weight:400}
+
+/* ---------- Popup detail ---------- */
+.modal{position:fixed;inset:0;background:#000a;z-index:50;display:grid;place-items:center;padding:14px;overflow:auto}
+.modal[hidden]{display:none}
+.box{background:var(--kartu);border-radius:14px;max-width:880px;width:100%;padding:20px;position:relative;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box>img{width:100%;border-radius:10px;aspect-ratio:1/1;object-fit:cover;cursor:zoom-in}
+.box h3{font-size:28px;margin:4px 0 8px}
+.x{position:absolute;top:8px;right:12px;background:none;border:0;font-size:30px;color:var(--abu)}
+.spec{width:100%;border-collapse:collapse;margin:12px 0}.spec td{padding:8px 0;border-bottom:1px solid var(--garis)}.spec td:first-child{color:var(--abu);width:40%}
+.box select{width:100%;padding:10px;border:1px solid var(--garis);border-radius:8px;margin-bottom:12px;font:inherit}
+.similar{grid-column:1/-1}.similar h4{margin-bottom:10px}.similar .grid{--kolom-produk:120px}
+
+/* ---------- Footer & tombol WA melayang ---------- */
+footer{background:var(--gelap);color:#e5e7ea;padding:24px 0;font-size:14px}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;border-radius:999px;padding:14px 20px;box-shadow:0 6px 18px #0004}
+
+/* ---------- HP (layar kecil) ---------- */
+@media(max-width:760px){
+  .burger{display:block}
+  nav{display:none;position:absolute;top:60px;left:0;right:0;background:var(--gelap);flex-direction:column;padding:8px 18px}
+  nav.open{display:flex}
+  .hero-grid,.two,.box{grid-template-columns:1fr}
+  .wall{order:-1;grid-template-columns:repeat(6,1fr);transform:none}.wall img:nth-child(n+7){display:none}
+  .cats{grid-template-columns:1fr 1fr}
+  .grid{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
