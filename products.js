@@ -215,7 +215,6 @@ const PRODUCTS = [
   // Mau tambah produk di kategori ini? Salin 1 baris di bawah, tempel di bawahnya, ganti isinya (foto taruh di folder terkait).
   { id: 97, brand: "Kansai", name: "Cat Ftalit Kansai", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Cat Ftalit Kansai.jpg", description: "Cat minyak khusus kayu dan besi." },
   { id: 98, brand: "Permata", name: "Cat Tembok Permata", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Cat Permata.jpg", description: "Cat tembok untuk dinding kokoh dan tahan jamur." },
-  { id: 99, brand: "General", name: "Cat Kayu & Besi Kilap", category: "Cat & Alat Pelapis", size: "", surface: "", image: "", description: "Cat kilap pelindung kayu dan besi." },
   { id: 100, brand: "General", name: "Roller Cat Tembok", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Roller Cat.jpg", description: "Roller untuk pengecatan merata." },
   { id: 101, brand: "Diton", name: "Cat Semprot Diton", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/diton.jpg", description: "Cat semprot praktis tanpa kuas.", color: ["Merah","Biru","Hitam","Kuning","Putih","Coklat Muda"] },
   { id: 344, brand: "Kansai", name: "Kansai Anti Mosquito", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Kansai Anti Mosquito.jpg", description: "Cat tembok interior anti nyamuk. Formulasi resin modified acrylic dengan teknologi MosQick yang bekerja hingga 2 tahun, diuji bersama IPB, untuk membantu mengurangi gigitan nyamuk dan risiko demam berdarah di dalam rumah." },

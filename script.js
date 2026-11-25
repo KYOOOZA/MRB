@@ -135,7 +135,7 @@ function buatKategoriDanMerek() {
 }
 
 /* ---------- 3. Filter & Tampilan Grid Produk ---------- */
-function cocok(p) {
+  function cocok(p) {
   const teks = [
     p.name,
     p.brand,
