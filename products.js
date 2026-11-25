@@ -272,7 +272,7 @@ const PRODUCTS = [
     category: "Dapur",
     size: "Standard",
     surface: "stainless steel",
-    image: "Contempo/Kitchen Sink Single Bowl + Drainboard.png",
+    image: "Contempo/kitchen-sink-single-bowl-drainboard.png",
     description: "Bak cuci piring + sayap pengering • Stainless Steel 201 • Sudut radius modern, avur & keranjang retractable drain"
   },
   {
