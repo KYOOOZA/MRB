@@ -268,7 +268,7 @@ const PRODUCTS = [
   {
     id: 201,
     brand: "CONTEMPO",
-    name: "Kitchen Sink Single Bowl + Drainboard",
+    name: "Kitchen Sink Single Bowl and Drainboard",
     category: "Dapur",
     size: "Standard",
     surface: "stainless stekel",
