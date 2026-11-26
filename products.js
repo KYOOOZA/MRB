@@ -713,9 +713,9 @@
     { id: 263, brand: "IKAD", name: "DX 37192", category: "Keramik & Granit", size: "25x40", surface: "glossy", image: "IKAD/DX 37192.jpg", description: "Keramik dinding motif heksagon • 25 x 40 cm • Glossy" },
     { id: 264, brand: "IKAD", name: "DX 34628", category: "Keramik & Granit", size: "25x40", surface: "glossy", image: "IKAD/DX 34628.jpg", description: "Keramik dinding motif kotak abu • 25 x 40 cm • Glossy" },
     { id: 278, brand: "IKAD", name: "DX 21680", category: "Keramik & Granit", size: "25x40", surface: "glossy", image: "IKAD/DX 21680.jpg", description: "Keramik dinding motif gelombang • 25 x 40 cm • Glossy" },
-    { id: 279, brand: "IKAD", name: "DX 31192", category: "Keramik & Granit", size: "25x40", surface: "glossy", image: "Ikad/DX 31192.jpg", description: "Keramik dinding motif heksagon abu • 25 x 40 cm • Glossy" },
-    { id: 281, brand: "IKAD", name: "DX 34820", category: "Keramik & Granit", size: "25x40", surface: "glossy", image: "Ikad/DX 34820.jpg", description: "Keramik dinding motif garis vertikal abu • 25 x 40 cm • Glossy" },
-    { id: 282, brand: "IKAD", name: "DX 3133", category: "Keramik & Granit", size: "25x40", surface: "glossy", image: "Ikad/DX 3133.jpg", description: "Keramik dinding motif kotak putih • 25 x 40 cm • Glossy" },
+    { id: 279, brand: "IKAD", name: "DX 31192", category: "Keramik & Granit", size: "25x40", surface: "glossy", image: "IKAD/DX 31192.jpg", description: "Keramik dinding motif heksagon abu • 25 x 40 cm • Glossy" },
+    { id: 281, brand: "IKAD", name: "DX 34820", category: "Keramik & Granit", size: "25x40", surface: "glossy", image: "IKAD/DX 34820.jpg", description: "Keramik dinding motif garis vertikal abu • 25 x 40 cm • Glossy" },
+    { id: 282, brand: "IKAD", name: "DX 3133", category: "Keramik & Granit", size: "25x40", surface: "glossy", image: "IKAD/DX 3133.jpg", description: "Keramik dinding motif kotak putih • 25 x 40 cm • Glossy" },
 
     // ===== IKAD DL (Dinding 20x25 & 25x40) =====
     { id: 213, brand: "IKAD", name: "DL 2173", category: "Keramik & Granit", size: "20x25", surface: "glossy", image: "IKAD/DL 2173.png", description: "Keramik dinding motif lingkaran • 20 x 25 cm • Glossy" },
