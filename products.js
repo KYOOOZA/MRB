@@ -185,7 +185,7 @@
         { id: 83, brand: "PLATINUM", name: "Tabitha Grey", category: "Keramik & Granit", size: "", surface: "", image: "Platinum/Tabitha Grey.jpg", description: "" },
         { id: 84, brand: "PLATINUM", name: "Tiffany Basic", category: "Keramik & Granit", size: "", surface: "", image: "Platinum/Tiffany Basic.jpg", description: "" },
         { id: 85, brand: "PLATINUM", name: "Turin Grey", category: "Keramik & Granit", size: "", surface: "", image: "Platinum/Turin Grey.jpg", description: "" },
-        { id: 86, brand: "PLATINUM", name: "Tuscany Grey", category: "Keramik & Granit", size: "", surface: "", image: "Platinum/Tuscany Grey.jpg", description: "" },
+        { id: 86, brand: "PLATINUM", name: "Tuscany Grey", category: "ENERAKeramik & Granit", size: "", surface: "", image: "Platinum/Tuscany Grey.jpg", description: "" },
 
         // ================ PINTU, JENDELA & KUSEN ================
         // Mau tambah produk di kategori ini? Salin 1 baris di bawah, tempel di bawahnya, ganti isinya (foto taruh di folder terkait).
@@ -218,7 +218,7 @@
         // Mau tambah produk di kategori ini? Salin 1 baris di bawah, tempel di bawahnya, ganti isinya (foto taruh di folder terkait).
         { id: 97, brand: "Kansai", name: "Cat Ftalit Kansai", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Cat Ftalit Kansai.jpg", description: "Cat minyak khusus kayu dan besi." },
         { id: 98, brand: "Permata", name: "Cat Tembok Permata", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Cat Permata.jpg", description: "Cat tembok untuk dinding kokoh dan tahan jamur." },
-        { id: 100, brand: "General", name: "Roller Cat Tembok", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Roller Cat.jpg", description: "Roller untuk pengecatan merata." },
+        { id: 100, brand: "ACE", name: "Roller Cat Tembok", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Roller Cat.jpg", description: "Roller untuk pengecatan merata." },
         { id: 101, brand: "Diton", name: "Cat Semprot Diton", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/diton.jpg", description: "Cat semprot praktis tanpa kuas.", color: ["Merah","Biru","Hitam","Kuning","Putih","Coklat Muda"] },
         { id: 344, brand: "Kansai", name: "Kansai Anti Mosquito", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Kansai Anti Mosquito.jpg", description: "Cat tembok interior anti nyamuk. Formulasi resin modified acrylic dengan teknologi MosQick yang bekerja hingga 2 tahun, diuji bersama IPB, untuk membantu mengurangi gigitan nyamuk dan risiko demam berdarah di dalam rumah." },
       { id: 345, brand: "Kansai", name: "Kansai Diamond Shield 12-IN-1", category: "Cat & Alat Pelapis", size: "", surface: "", image: "cat/Kansai Diamond Shield 12-IN-1.jpg", description: "Cat eksterior premium yang menggabungkan 12 inovasi dalam satu cat: tahan cuaca ekstrem, mudah dibersihkan, tahan pudar, dan daya tutup tinggi. Pilihan untuk dinding luar rumah yang awet dan tetap cantik." },
@@ -303,7 +303,7 @@
         { id: 103, brand: "Volk", name: "Closet Duduk Volk", category: "Kamar Mandi", size: "", surface: "", image: "closet/Closet Duduk Volk.jpeg", description: "Closet duduk hemat air, mudah dibersihkan." },
         { id: 104, brand: "Toto", name: "Closet Duduk Toto", category: "Kamar Mandi", size: "", surface: "", image: "closet/Closet Duduk Toto.jpg", description: "Closet duduk standar sanitari modern." },
         { id: 105, brand: "Kia", name: "Closet Jongkok Kia", category: "Kamar Mandi", size: "", surface: "", image: "closet/Closet Kia.png", description: "Closet jongkok porselen kuat." },
-        { id: 106, brand: "General", name: "Water Heater", category: "Kamar Mandi", size: "", surface: "", image: "closet/water heater.png", description: "Pemanas air mandi, aman dan hemat energi." },
+        { id: 106, brand: "Ariston", name: "Water Heater", category: "Kamar Mandi", size: "", surface: "", image: "closet/water heater.png", description: "Pemanas air mandi, aman dan hemat energi." },
         { id: 107, brand: "Dekson", name: "Malta KMX 1312", category: "Kamar Mandi", size: "", surface: "", image: "dexton/malta kmx.png", description: "Keran dapur Dexton Malta KMX 1312." },
         { id: 108, brand: "Dekson", name: "Canale SS 3114-3 Shower Set 3 Fungsi", category: "Kamar Mandi", size: "", surface: "", image: "dexton/canale.png", description: "Shower set 3 fungsi (rain shower, hand shower, spout). Bahan full brass, finishing diamond coating, air panas dan dingin, cartridge Sedal Spanyol, aerator Neoperl Jerman." },
         { id: 109, brand: "Dekson", name: "Mizuya BM 1326-3H Basin Mixer", category: "Kamar Mandi", size: "", surface: "", image: "dexton/mizuya bm 1326 3h.png", description: "Keran wastafel 3 lubang (basin mixer). Full brass, diamond coating, cartridge Sedal Spanyol, aerator Neoperl Jerman, selang Neoperl 60 cm (sepasang). Warna Chrome Polish." },
