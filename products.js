@@ -28,7 +28,9 @@
         { name: "Plafon PVC", icon: "🏠", desc: "Plafon PVC motif kayu, marmer, polos" },
         { name: "Keran Dapur & Kran Air", icon: "🚰", desc: "Keran dapur dan kran air" },
         { name: "Kunci & Aksesori Pintu", icon: "🔑", desc: "Gagang, kunci, engsel, door closer" },
-        { name: "Pompa Air", icon: "💦", desc: "Pompa air listrik dan jet pump" }
+        { name: "Pompa Air", icon: "💦", desc: "Pompa air listrik dan jet pump" },
+        { name: "Panel Dinding", icon: "🧱", desc: "PVC UV board, panel alur, WPC" },
+        { name: "Atap & Insulasi", icon: "🏠", desc: "Atap, glasswool, foil, ventilator" }
       ]
     };
 
@@ -1044,8 +1046,7 @@
    (di dalam daftar PRODUCTS, sebelum tanda ];  | pastikan baris sebelumnya berakhir koma)
    Foto ada di folder "Lainnya" (taruh sejajar dengan folder Vellino, Laguna, dll).
    TAMBAHKAN dulu 2 baris kategori ini di CONFIG.categories (bagian atas products.js):
-   { name: "Panel Dinding", icon: "🧱", desc: "PVC UV board, panel alur, WPC" },
-   { name: "Atap & Insulasi", icon: "🏠", desc: "Atap, glasswool, foil, ventilator" },
+   
    Merek "Tanpa Merek" = merek belum diketahui dari foto; ganti jika sudah tahu.
    ================================================================ */
 
